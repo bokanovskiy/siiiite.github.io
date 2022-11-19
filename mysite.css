@@ -1,0 +1,143 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+#container{
+	width:900px;
+	height:auto;	/*Высота - автоматическая*/
+	margin:0 auto;	/*Расположение блока - по центру браузера*/
+}
+
+#header{
+	width:900px;
+	height:100px;	
+	background-color:#ccc;
+}
+
+#left{
+	width:200px;
+	height:600px;	
+	background-color:#9fe2bf;
+	float:left;		/*Блок плавает слева*/
+}
+
+#right{
+	width:700px;
+	height:600px;	
+	background-color:#ffcbdb;
+	float:right;	/*Блок плавает справа*/
+}
+
+#gallery{
+	width:900px;
+	height:330px;	
+	background-color:#e6e6fa;
+	clear:both;		/*Расположить под всеми ПЛАВАЮЩИМИ блоками*/
+}
+
+#footer{
+	width:900px;
+	height:30px;	
+	background-color:#ccc;
+}
+
+#logo{
+	width:60px;
+	height:60px;
+	margin:20px;
+}
+
+#title_site{
+	height:60px;
+	margin:20px;
+	float:right;
+}
+
+#img_in_right_1, #img_in_right_2{
+	height:150px;
+	width:150px;
+	margin:20px;
+}
+
+#img_in_right_1{
+	float: left;
+}
+
+#img_in_right_2{
+	float: right;
+}
+
+.p_in_right{
+	margin:20px;
+}
+
+.img_in_gallery{
+	height:100px;
+	width:144px;
+	float:left;
+	margin:7.5px 0px 0px 5px;
+	transition:all 0.6s; 	/*Добавим плавность*/
+}
+
+.img_in_gallery_last{
+	height:100px;
+	width:144px;
+	float:left;
+	margin:7.5px 5px 0px 5px;
+	transition:all 0.6s;	/*Добавим плавность*/
+}
+
+.img_in_footer{
+	height:20px;
+	width:20px;
+	float:left;
+	margin:5px;
+}
+
+.p_in_footer{
+	height:20px;
+	width:auto;
+	float:right;
+	margin:5px;
+	color:#fff;
+}
+
+#left ul{
+	list-style:none; 		/* Убрать маркеры */
+	width:190px;	 		/*Ширина чуть меньше основного блока, чтобы по краям появились отступы*/
+	height:auto;	 		/*Высота автоматическая*/	
+	margin:20px auto;   	/*Выравнивание по центру родительского блока*/
+}
+
+#left ul li{
+	width:190px;			/* Ширина, как у всего списка */	
+	height:25px;			/* Высота */	
+	font-size:15px;			/* Размер шрифта */
+	text-align:center;		/* Выравнивание текста по центру */
+	background-color:#ccc;	/* Фоновый цвет */
+	padding:5px 7px;		/* Внутренние поля (от текста до границ пункта) */
+	font-family:Tahoma;		/* Семейство шрифтов */
+	font-weight:bold;		/* Полужирный шрифт */
+	margin-bottom:5px;		/* Внешний отступ вниз (чтобы пункты не прилипали друг к другу)*/
+}
+
+
+#left ul li a{
+	text-decoration:none;	/* Уберем подчеркивание */
+	color:#000;				/* Цвет текста */
+}
+
+
+#left ul li:hover{
+	background-color:#ffcbdb;
+}
+
+#left ul li:hover a{
+	color:#fff;
+}
+
+/* Так мы обращаемся сразу к двум классам, то есть ко всем картинкам фотогалереи */
+.img_in_gallery:hover, .img_in_gallery_last:hover{
+	transform:scale(1.2);	/*Немного увеличим масштаб картинок*/
+}
